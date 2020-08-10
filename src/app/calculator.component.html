@@ -1,0 +1,14 @@
+    <p>{{rectangleShape.name}}</p>
+    <input #box (change)="rectangleShape.onChangeSideA($event)">
+    <input #box (change)="rectangleShape.onChangeSideB($event)">
+    <button (click)="rectangleShape.circumference()" (click)="rectangleShape.area()">Calculate</button>
+
+    <p>Omkreds: {{rectangleShape.circumferenceResult}}</p>
+    <p>Areal: {{rectangleShape.areaResult}}</p>
+
+    <p>{{squareShape.name}}</p>
+    <input #box (change)="squareShape.onChangeSideA($event)">
+    <button (click)="squareShape.circumference()" (click)="squareShape.area()">Calculate</button>
+
+    <p>Omkreds: {{squareShape.circumferenceResult}}</p>
+    <p>Areal: {{squareShape.areaResult}}</p>
