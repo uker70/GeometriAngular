@@ -13,13 +13,9 @@ abstract class Shape {
         console.log(event.target.value)
     }
 
-    circumference(){
-        
-    }
+    abstract circumference(): any;   
 
-    area(){
-
-    }
+    abstract area(): any;
 }
 
 export class Rectangle extends Shape {
